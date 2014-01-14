@@ -3,7 +3,12 @@
 # scrubAMI.sh is used to clean our Amazon AMI before submission to the Marketplacei
 #
 # To run this on our AMI:
-# sudo wget -O - https://raw2.github.com/howtoinstallghost/Scrub-AMI/master/scrubAMI.sh | sudo bash
+# wget -O - https://raw2.github.com/howtoinstallghost/Scrub-AMI/master/scrubAMI.sh | bash
+
+# clear the ec2-user history before sudo -s
+history -c
+
+sudo -s
 
 # Stop Ghost
 forever stopall
@@ -21,4 +26,4 @@ rm /var/log/messages*
 rm /home/ec2-user/.ssh/authorized_keys
 rm /root/.ssh/authorized_keys
 find / -name "authorized_keys" –exec rm –f {} \;
-find /root/.*history /home/*/.*history -exec rm -f {} \;
+history -c

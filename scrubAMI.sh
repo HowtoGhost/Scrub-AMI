@@ -1,6 +1,6 @@
 #!/bin/bash
 # Written by Andy Boutte and David Balderston of howtoinstallghost.com and allaboutghost.com
-# scrubAMI.sh is used to clean our Amazon AMI before submission to the Marketplacei
+# scrubAMI.sh is used to clean our Amazon AMI before submission to the Marketplace
 #
 # To run this on our AMI:
 # sudo wget -O - https://raw2.github.com/howtoinstallghost/Scrub-AMI/master/scrubAMI.sh | sudo bash

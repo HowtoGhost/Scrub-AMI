@@ -29,7 +29,6 @@ rm /var/log/messages*
 
 rm /root/.bash_history
 rm /home/ec2-user/.bash_history
-#history -d $((HISTCMD-1)) && history -c
-#history -c
+history -d $((HISTCMD-1)) && history -c
 
 exit

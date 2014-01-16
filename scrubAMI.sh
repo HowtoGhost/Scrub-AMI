@@ -7,8 +7,6 @@
 
 # Temporarily disable history
 export HISTSIZE=0
-sudo -s
-export HISTSIZE=0
 
 # Stop Ghost
 forever stopall
@@ -31,6 +29,3 @@ rm /var/log/messages*
 
 rm /root/.bash_history
 rm /home/ec2-user/.bash_history
-history -d $((HISTCMD-1)) && history -c
-
-exit

@@ -3,7 +3,7 @@
 # scrubAMI.sh is used to clean our Amazon AMI before submission to the Marketplace
 #
 # To run this on our AMI:
-# sudo wget -O - https://raw2.github.com/howtoinstallghost/Scrub-AMI/master/scrubAMI.sh | sudo bash
+# HISTSIZE=0; sudo wget -O - https://raw2.github.com/howtoinstallghost/Scrub-AMI/master/scrubAMI.sh | sudo bash
 
 # Temporarily disable history
 export HISTSIZE=0

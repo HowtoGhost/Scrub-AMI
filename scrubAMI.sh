@@ -9,7 +9,7 @@
 export HISTSIZE=0
 
 # Stop Ghost
-forever stopall
+pm2 stop all
 
 # Things to delete for Ghost
 

@@ -23,7 +23,7 @@ rm /var/log/secure*
 rm /var/log/messages*
 rm /home/ec2-user/.ssh/authorized_keys
 rm /root/.ssh/authorized_keys
-#find / -name "authorized_keys" –exec rm –f {} \;
+find / -name "authorized_keys" –exec rm –f {} \;
 
 # Clear history last
 

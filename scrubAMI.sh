@@ -21,8 +21,8 @@ rm /var/www/ghost/content/data/*.db
 rm /var/log/cron*
 rm /var/log/secure*
 rm /var/log/messages*
-#rm /home/ec2-user/.ssh/authorized_keys
-#rm /root/.ssh/authorized_keys
+rm /home/ec2-user/.ssh/authorized_keys
+rm /root/.ssh/authorized_keys
 #find / -name "authorized_keys" –exec rm –f {} \;
 
 # Clear history last

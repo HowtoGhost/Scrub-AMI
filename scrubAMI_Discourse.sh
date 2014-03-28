@@ -8,11 +8,9 @@
 # Temporarily disable history
 export HISTSIZE=0
 
-# Stop Ghost
-pm2 stop all
-
-# Things to delete for Ghost
+# Things to delete for Discourse
 rm -r /var/log/ghost
+rm /.pm2/log
 rm /var/www/ghost/content/data/*.db
 
 # Things to delete at OS level
@@ -28,4 +26,4 @@ find / -name "authorized_keys" –exec rm –f {} \;
 # Clear history last
 rm /root/.bash_history
 rm /home/ec2-user/.bash_history
-rm /home/ghost/.bash_history
+rm /home/discourse/.bash_history

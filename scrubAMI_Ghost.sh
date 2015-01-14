@@ -34,7 +34,3 @@ find / -name "authorized_keys" -delete
 rm /root/.bash_history
 rm /home/ec2-user/.bash_history
 rm /home/ghost/.bash_history
-
-# Start Ghost
-cd /var/www/ghost
-sudo -u ghost NODE_ENV=production /usr/local/bin/pm2 start index.js --name ghost

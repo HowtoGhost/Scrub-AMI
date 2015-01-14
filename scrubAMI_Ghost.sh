@@ -9,7 +9,7 @@
 export HISTSIZE=0
 
 # Stop Ghost
-pm2 stop all
+sudo -u ghost pm2 stop all
 
 # Things to delete for Ghost
 rm /var/log/cloud-init.log
